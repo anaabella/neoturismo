@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/**fondo de carlos paz**/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/carlos\ paz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/**menu**/
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #48ff70;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+/**neoturismo**/
+
+.logo {
+    width: 170px;
+    cursor: default;
+    color: #48ff70;
+}
+
+
+/** carlospaz **/
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: antiquewhite;
+}
+
+
+/** carlospaz descripcion**/
+
+p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.h2 {
+    margin: 50cm;
+}
