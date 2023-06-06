@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -12,7 +13,7 @@
   background-position: center;
 }
 
-.navbar{
+.navbar {
   width: 85%;
   margin: auto;
   padding: 35px 0;
@@ -21,10 +22,15 @@
   justify-content: space-between;
 }
 
-.navbar ul li {
+.navbar ul {
   list-style: none;
-  display: inline-block;
+  display: flex;
   margin: 0 20px;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
 }
 
 .navbar ul li a{
@@ -33,14 +39,15 @@
   text-transform: uppercase;
 }
 
-.navbar ul li::after{
+.navbar ul li::after {
   content: "";
   height: 3px;
   background: #48ff70;
   position: absolute;
   left: 0;
   bottom: -1px;
-  transition: 0.5;
+  width: 0;
+  transition: width 0.5s;
 }
 
 .navbar ul li:hover::after{
