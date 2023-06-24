@@ -23,3 +23,4 @@ function openImage(imageUrl) {
 
   fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
+
